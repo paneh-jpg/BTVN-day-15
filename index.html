@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bài tập về nhà buổi 15 — PrismJS</title>
+
+    <!-- PrismJS CSS (tema Okaidia) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-okaidia.min.css"
+    />
+    <!-- Line numbers plugin CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/line-numbers/prism-line-numbers.css"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- Header gốc của bạn -->
+      <header class="header">
+        <h1 class="heading">Bài tập về nhà buổi 15</h1>
+        <p class="desc">
+          Toán tử so sánh, toán tử gán, Truthy và Falsy, Toán tử AND OR NOT và
+          Nullish, Toán tử ba ngôi.
+        </p>
+        <p class="desc">Câu lệnh rẽ nhánh và Switch case</p>
+        <p class="desc">Vòng lặp For</p>
+      </header>
+
+      <!-- Bài 1 -->
+      <section class="section">
+        <div class="section__head">
+          <span class="badge">Bài 1</span>
+          <h3 class="title">In tuổi của tôi</h3>
+        </div>
+
+        <div class="code">
+          <pre
+            id="code1"
+            class="line-numbers"
+          ><code class="language-javascript">let myAge = 25;
+console.log(`Tôi năm nay ${myAge} tuổi.`);</code></pre>
+        </div>
+      </section>
+
+      <!-- Bài 2 -->
+      <section class="section">
+        <div class="section__head">
+          <span class="badge">Bài 2</span>
+          <h3 class="title">Diện tích hình tròn</h3>
+        </div>
+
+        <div class="code">
+          <pre
+            id="code2"
+            class="line-numbers"
+          ><code class="language-javascript">const PI = 3.14159;
+let r = 5;
+console.log(`Diện tích hình tròn có bán kính ${r} là ${r * r * PI}.`);</code></pre>
+        </div>
+      </section>
+
+      <!-- Bài 3 -->
+      <section class="section">
+        <div class="section__head">
+          <span class="badge">Bài 3</span>
+          <h3 class="title">
+            Viết chương trình tính tổng, hiệu, tích, thương, số dư 2 số
+          </h3>
+        </div>
+        <div class="code">
+          <pre
+            id="code3"
+            class="line-numbers"
+          ><code class="language-javascript">let a = 7, b = 3;
+console.log(`Tổng: ${a} + ${b} = ${a + b}`);
+console.log(`Hiệu: ${a} - ${b} = ${a - b}`);
+console.log(`Tích: ${a} * ${b} = ${a * b}`);
+if (b === 0) {
+  console.log("Số bị chia không hợp lệ.");
+} else {
+  console.log(`Thương: ${a} / ${b} = ${a / b}`);
+}
+console.log(`Số dư: ${a} % ${b} = ${a % b}`);</code></pre>
+        </div>
+      </section>
+
+      <!-- Bài 4 -->
+      <section class="section">
+        <div class="section__head">
+          <span class="badge">Bài 4</span>
+          <h3 class="title">
+            Hãy gán cho biến displayName giá trị name nếu name có nội dung,
+            ngược lại là defaultName.
+          </h3>
+        </div>
+
+        <div class="code">
+          <pre
+            id="code4"
+            class="line-numbers"
+          ><code class="language-javascript">let userName = "Phương Anh";
+let defaultName = "Khách";
+let displayName = userName || defaultName;
+console.log(`Người dùng: ${displayName}.`);</code></pre>
+        </div>
+      </section>
+
+      <!-- Bài 5 -->
+      <section class="section">
+        <div class="section__head">
+          <span class="badge">Bài 5</span>
+          <h3 class="title">
+            Viết chương trình kiểm tra một người có đủ điều kiện lái xe không.
+          </h3>
+        </div>
+
+        <div class="code">
+          <pre
+            id="code5"
+            class="line-numbers"
+          ><code class="language-javascript">let userAge = 18;
+let hasLicense = true;
+if (userAge >= 18 && hasLicense) {
+  console.log("Đủ đều kiện.");
+} else {
+  console.log("Không đủ điều kiện");
+}</code></pre>
+        </div>
+      </section>
+
+      <!-- Bài 6 -->
+      <section class="section">
+        <div class="section__head">
+          <span class="badge">Bài 6</span>
+          <h3 class="title">Kiểm tra username/password rỗng</h3>
+        </div>
+
+        <div class="code">
+          <pre
+            id="code6"
+            class="line-numbers"
+          ><code class="language-javascript">let username = "user_01";
+let password = "abc123";
+console.log(username !== "" && password !== "");</code></pre>
+        </div>
+      </section>
+
+      <!-- Bài 7 -->
+      <section class="section">
+        <div class="section__head">
+          <span class="badge">Bài 7</span>
+          <h3 class="title">Tính % giảm giá</h3>
+        </div>
+
+        <div class="code">
+          <pre
+            id="code7"
+            class="line-numbers"
+          ><code class="language-javascript">let salePrice = 200000;
+let regularPrice = 1000000;
+let saleRate = 100 - (salePrice / regularPrice) * 100;
+console.log(`Sản phẩm được giảm giá: ${saleRate}%`);</code></pre>
+        </div>
+      </section>
+
+      <!-- Bài 8 -->
+      <section class="section">
+        <div class="section__head">
+          <span class="badge">Bài 8</span>
+          <h3 class="title">Hoán vị hai số (không dùng biến tạm)</h3>
+        </div>
+
+        <div class="code">
+          <pre
+            id="code8"
+            class="line-numbers"
+          ><code class="language-javascript">let x = 3;
+let y = 9;
+
+console.log(`x ban đầu: ${x}`);
+console.log(`y ban đầu: ${y}`);
+
+x = x + y;
+y = x - y;
+x = x - y;
+
+console.log(`x sau khi hoán vị: ${x}`);
+console.log(`y sau khi hoán vị: ${y}`);</code></pre>
+        </div>
+      </section>
+
+      <!-- Bài 9 -->
+      <section class="section">
+        <div class="section__head">
+          <span class="badge">Bài 9</span>
+          <h3 class="title">Viết chương trình tiền điện hàng tháng</h3>
+        </div>
+        <div class="code">
+          <pre
+            id="code9"
+            class="line-numbers"
+          ><code class="language-javascript">const PRICE_1 = 1678;
+const PRICE_2 = 1734;
+const PRICE_3 = 2014;
+const PRICE_4 = 2536;
+const PRICE_5 = 2834;
+const PRICE_6 = 2927;
+const KWH_NUMBER_1 = 50;
+const KWH_NUMBER_2 = 100;
+const KWH_NUMBER_3 = 200;
+const KWH_NUMBER_4 = 300;
+const KWH_NUMBER_5 = 400;
+
+let totalPrice = 0;
+let kWh = 400;
+// let kwh = 150 // 271,300
+// let kWh = 250; //498,800
+// let kWh = 500; //1,201,700
+
+if (kWh <= KWH_NUMBER_1) {
+  totalPrice += PRICE_1 * kWh;
+} else if (kWh <= KWH_NUMBER_2) {
+  totalPrice += PRICE_1 * KWH_NUMBER_1 + PRICE_2 * (kWh - KWH_NUMBER_1);
+} else if (kWh <= KWH_NUMBER_3) {
+  totalPrice +=
+    PRICE_1 * KWH_NUMBER_1 +
+    PRICE_2 * (KWH_NUMBER_2 - KWH_NUMBER_1) +
+    (kWh - KWH_NUMBER_2) * PRICE_3;
+} else if (kWh <= KWH_NUMBER_4) {
+  totalPrice +=
+    PRICE_1 * KWH_NUMBER_1 +
+    PRICE_2 * (KWH_NUMBER_2 - KWH_NUMBER_1) +
+    PRICE_3 * (KWH_NUMBER_4 - KWH_NUMBER_3) +
+    (kWh - KWH_NUMBER_3) * PRICE_4;
+} else if (kWh <= KWH_NUMBER_5) {
+  totalPrice +=
+    PRICE_1 * KWH_NUMBER_1 +
+    PRICE_2 * (KWH_NUMBER_2 - KWH_NUMBER_1) +
+    PRICE_3 * (KWH_NUMBER_4 - KWH_NUMBER_3) +
+    PRICE_4 * (KWH_NUMBER_5 - KWH_NUMBER_4) +
+    PRICE_5 * (kWh - KWH_NUMBER_4);
+} else {
+  totalPrice +=
+    PRICE_1 * KWH_NUMBER_1 +
+    PRICE_2 * (KWH_NUMBER_2 - KWH_NUMBER_1) +
+    PRICE_3 * (KWH_NUMBER_5 - KWH_NUMBER_4) +
+    PRICE_4 * (KWH_NUMBER_4 - KWH_NUMBER_3) +
+    PRICE_5 * (KWH_NUMBER_3 - KWH_NUMBER_2) +
+    PRICE_6 * (kWh - KWH_NUMBER_5);
+}
+
+console.log(
+  "Tiền điện của " + kWh + " kWh là " + totalPrice.toLocaleString() + " VNĐ"
+);</code></pre>
+        </div>
+      </section>
+
+      <!-- Bài 10 -->
+      <section class="section">
+        <div class="section__head">
+          <span class="badge">Bài 10</span>
+          <h3 class="title">
+            Cho 1 số nguyên bất kỳ, hiển thị danh sách các số chẵn và số lẻ
+          </h3>
+        </div>
+
+        <div class="code">
+          <pre
+            id="code10"
+            class="line-numbers"
+          ><code class="language-javascript">let n = 10;
+let oddStr = "Số lẻ: ";
+let evenStr = "Số chẵn: ";
+
+for (let i = 1; i &lt;= 10; i++) {
+  if (i % 2 === 0) {
+    evenStr = evenStr + i + " ";
+  } else {
+    oddStr = oddStr + i + " ";
+  }
+}
+
+console.log(oddStr);
+console.log(evenStr);</code></pre>
+        </div>
+      </section>
+    </div>
+
+    <!-- PrismJS core -->
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+    <!-- Language support for JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-javascript.min.js"></script>
+    <!-- Line numbers plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
