@@ -1,5 +1,5 @@
 // Bài 1:
-let myAge = 25;
+let myAge = 24;
 console.log(`Tôi năm nay ${myAge} tuổi.`);
 
 // Bài 2
