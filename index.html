@@ -42,7 +42,7 @@
           <pre
             id="code1"
             class="line-numbers"
-          ><code class="language-javascript">let myAge = 24;
+          ><code class="language-javascript">let myAge = 25;
 console.log(`Tôi năm nay ${myAge} tuổi.`);</code></pre>
         </div>
       </section>
@@ -225,22 +225,22 @@ if (kWh <= KWH_NUMBER_1) {
   totalPrice +=
     PRICE_1 * KWH_NUMBER_1 +
     PRICE_2 * (KWH_NUMBER_2 - KWH_NUMBER_1) +
-    PRICE_3 * (KWH_NUMBER_4 - KWH_NUMBER_3) +
+    PRICE_3 * (KWH_NUMBER_3 - KWH_NUMBER_2) +
     (kWh - KWH_NUMBER_3) * PRICE_4;
 } else if (kWh <= KWH_NUMBER_5) {
   totalPrice +=
     PRICE_1 * KWH_NUMBER_1 +
     PRICE_2 * (KWH_NUMBER_2 - KWH_NUMBER_1) +
-    PRICE_3 * (KWH_NUMBER_4 - KWH_NUMBER_3) +
-    PRICE_4 * (KWH_NUMBER_5 - KWH_NUMBER_4) +
+    PRICE_3 * (KWH_NUMBER_3 - KWH_NUMBER_2) +
+    PRICE_4 * (KWH_NUMBER_4 - KWH_NUMBER_3) +
     PRICE_5 * (kWh - KWH_NUMBER_4);
 } else {
   totalPrice +=
     PRICE_1 * KWH_NUMBER_1 +
     PRICE_2 * (KWH_NUMBER_2 - KWH_NUMBER_1) +
-    PRICE_3 * (KWH_NUMBER_5 - KWH_NUMBER_4) +
+    PRICE_3 * (KWH_NUMBER_3 - KWH_NUMBER_2) +
     PRICE_4 * (KWH_NUMBER_4 - KWH_NUMBER_3) +
-    PRICE_5 * (KWH_NUMBER_3 - KWH_NUMBER_2) +
+    PRICE_5 * (KWH_NUMBER_5 - KWH_NUMBER_4) +
     PRICE_6 * (kWh - KWH_NUMBER_5);
 }
 

@@ -76,7 +76,7 @@ const KWH_NUMBER_4 = 300;
 const KWH_NUMBER_5 = 400;
 
 let totalPrice = 0;
-let kWh = 400;
+let kWh = 1;
 // let kwh = 150 // 271,300
 // let kWh = 250; //498,800
 // let kWh = 500; //1,201,700
@@ -94,22 +94,22 @@ if (kWh <= KWH_NUMBER_1) {
   totalPrice +=
     PRICE_1 * KWH_NUMBER_1 +
     PRICE_2 * (KWH_NUMBER_2 - KWH_NUMBER_1) +
-    PRICE_3 * (KWH_NUMBER_4 - KWH_NUMBER_3) +
+    PRICE_3 * (KWH_NUMBER_3 - KWH_NUMBER_2) +
     (kWh - KWH_NUMBER_3) * PRICE_4;
 } else if (kWh <= KWH_NUMBER_5) {
   totalPrice +=
     PRICE_1 * KWH_NUMBER_1 +
     PRICE_2 * (KWH_NUMBER_2 - KWH_NUMBER_1) +
-    PRICE_3 * (KWH_NUMBER_4 - KWH_NUMBER_3) +
-    PRICE_4 * (KWH_NUMBER_5 - KWH_NUMBER_4) +
+    PRICE_3 * (KWH_NUMBER_3 - KWH_NUMBER_2) +
+    PRICE_4 * (KWH_NUMBER_4 - KWH_NUMBER_3) +
     PRICE_5 * (kWh - KWH_NUMBER_4);
 } else {
   totalPrice +=
     PRICE_1 * KWH_NUMBER_1 +
     PRICE_2 * (KWH_NUMBER_2 - KWH_NUMBER_1) +
-    PRICE_3 * (KWH_NUMBER_5 - KWH_NUMBER_4) +
+    PRICE_3 * (KWH_NUMBER_3 - KWH_NUMBER_2) +
     PRICE_4 * (KWH_NUMBER_4 - KWH_NUMBER_3) +
-    PRICE_5 * (KWH_NUMBER_3 - KWH_NUMBER_2) +
+    PRICE_5 * (KWH_NUMBER_5 - KWH_NUMBER_4) +
     PRICE_6 * (kWh - KWH_NUMBER_5);
 }
 
