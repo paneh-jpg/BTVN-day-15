@@ -43,7 +43,7 @@ let password = "abc123";
 console.log(username !== "" && password !== "");
 
 //Bài 7:
-let salePrice = 200000;
+let salePrice = 500000;
 let regularPrice = 1000000;
 let saleRate = 100 - (salePrice / regularPrice) * 100;
 console.log(`Sản phẩm được giảm giá: ${saleRate}%`);
@@ -118,15 +118,18 @@ console.log(
 );
 
 //Bài 10:
-let n = 10;
+let n = 100;
 let oddStr = "Số lẻ: ";
 let evenStr = "Số chẵn: ";
 
-for (let i = 1; i <= 10; i++) {
+for (let i = 0; i <= n; i++) {
   if (i % 2 === 0) {
-    evenStr = evenStr + i + " ";
+    evenStr = evenStr + i;
+    if ((n % 2 === 0 && i < n) || (n % 2 !== 0 && i < n - 2)) evenStr += ", ";
   } else {
-    oddStr = oddStr + i + " ";
+    oddStr = oddStr + i;
+    if ((n % 2 === 0 && i < n - 1) || (n % 2 !== 0 && i < n - 2))
+      oddStr += ", ";
   }
 }
 

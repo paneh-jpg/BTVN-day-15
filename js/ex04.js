@@ -24,10 +24,9 @@ jerry.getName = function () {
 };
 
 console.log(jerry.getName());
-*/
 
 const person = {
   name: "John",
 };
 
-console.log(person.toString());
+console.log(person.toString()); */
