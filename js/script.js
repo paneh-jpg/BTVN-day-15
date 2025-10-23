@@ -118,18 +118,21 @@ console.log(
 );
 
 //Bài 10:
-let n = 100;
-let oddStr = "Số lẻ: ";
-let evenStr = "Số chẵn: ";
+
+let n = 10;
+// let n = 100;
+// let n = 19;
+// let n = 20;
+let oddStr = "Số lẻ:";
+let evenStr = "Số chẵn:";
 
 for (let i = 0; i <= n; i++) {
   if (i % 2 === 0) {
-    evenStr = evenStr + i;
-    if ((n % 2 === 0 && i < n) || (n % 2 !== 0 && i < n - 2)) evenStr += ", ";
+    evenStr = evenStr + " " + i;
+    if ((n % 2 === 0 && i < n) || (n % 2 !== 0 && i < n - 2)) evenStr += ",";
   } else {
-    oddStr = oddStr + i;
-    if ((n % 2 === 0 && i < n - 1) || (n % 2 !== 0 && i < n - 2))
-      oddStr += ", ";
+    oddStr = oddStr + " " + i;
+    if ((n % 2 === 0 && i < n - 1) || (n % 2 !== 0 && i < n - 1)) oddStr += ",";
   }
 }
 
