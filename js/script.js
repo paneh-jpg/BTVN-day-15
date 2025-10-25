@@ -32,9 +32,9 @@ console.log(`Người dùng: ${displayName}.`);
 let userAge = 18;
 let hasLicense = true;
 if (userAge >= 18 && hasLicense) {
-  console.log("Đủ đều kiện.");
+  console.log("Đủ điều kiện.");
 } else {
-  console.log("Không đủ điều kiện");
+  console.log("Không đủ điều kiện.");
 }
 
 //Bài 6:
@@ -46,7 +46,7 @@ console.log(username !== "" && password !== "");
 let salePrice = 500000;
 let regularPrice = 1000000;
 let saleRate = 100 - (salePrice / regularPrice) * 100;
-console.log(`Sản phẩm được giảm giá: ${saleRate}%`);
+console.log(`Sản phẩm được giảm giá: ${saleRate.toFixed(2)}%`);
 
 //Bài 8:
 let x = 3;
